@@ -11,7 +11,7 @@ body{
 h1{
   text-align: center;
 }
-input[type=text], input[type=password] {
+input[type=text], input[type=password], input[type=tel], input[type=email] {
   padding: 1% 1%; /* Padding is inside the text box, margin is surrounding it */
   margin: 1% 0;
   box-sizing: border-box; /* Learn about this */
@@ -25,4 +25,28 @@ input.leftColumn{
 }
 input.rightColumn{
   float: right;
+}
+label{
+  font-weight: bold;
+}
+span{
+  float:right;
+  padding-left: 20%;
+}
+button{
+  border: 1px solid transparent;
+  border-radius: 0.25rem; /*gives buttons rounded edges*/
+  color:#fff;
+  cursor:pointer; /*turns the cursor into a finger on hover*/
+}
+button:not(.termsBtn){  /*Excludes the button next to terms of service to keep it smaller*/
+  box-sizing: border-box; 
+  width: 49%;
+  padding: 14px 20px;
+}
+.register{
+  background-color:#418bca;
+}
+.signIn{
+  background-color:#5bb85d;
 }
