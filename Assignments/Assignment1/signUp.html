@@ -5,27 +5,55 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<form id="container">
+		<form>
 			<h1>Sign Up</h1>
-			<input type="text" class="leftColumn" placeholder="First Name">
-			<input type="text" class="rightColumn" placeholder="Last Name">
-			<br>
 
-			<input type="tel" class="oneColumn" placeholder="Mobile No.">
-			<br>
-			<input type="email" class="oneColumn" placeholder="Email Address">
-			<br>
-			<input type="password" class="leftColumn" placeholder="Password">
-			<input type="password" class="rightColumn" placeholder="Confirm Password">
-			<br>
+			<div class="row"> <!--row for names, 2 col-->
+				<div class="box">
+					<input type="text" placeholder="First Name">
+				</div>
+            	<div class="box">
+					<input type="text" placeholder="Last Name">
+				</div>
+			</div>
 
-			<label><input type="checkbox">I Agree</label><!--Read more about label-->
-			<!--&emsp;&emsp;&emsp;&emsp;-->
-			<span>By clicking <button class="register termsBtn">Register</button>, you agree to the <a href="https://www.w3schools.com/tags/att_a_href.asp" target="_blank">Terms and Conditions</a> set out by this site, including our Cookie Use.</span>
-			<br>
+			<div class="row"> <!--row for mobile number, 1 col-->
+				<div class="box">
+					<input type="tel" placeholder="Mobile No.">
+				</div>
+			</div>
+			<div class="row"> <!--row for email, 1 col-->
+				<div class="box">
+					<input type="email" placeholder="Email Address">
+				</div>
+			</div>
+			
+			<div class="row"> <!--row for passwords, 2 col-->
+				<div class="box">
+					<input type="password" placeholder="Password">
+				</div>
+				<div class="box">
+					<input type="password" placeholder="Confirm Password">
+				</div>
+			</div>
 
-			<button class="register">Register</button>
-			<button class="signIn">Sign In</button>
+			<div class="row"> <!--row for checkbox and disclaimer, 2 col-->
+				<div class="box" id="agreementBox">
+					<label><input type="checkbox">I Agree</label>
+				</div>
+				<div class="box">
+					<span>By clicking <button class="register termsBtn">Register</button>, you agree to the <a href="https://www.w3schools.com/tags/att_a_href.asp" target="_blank">Terms and Conditions</a> set out by this site, including our Cookie Use.</span>
+				</div>
+			</div>
+
+			<div class="row"> <!--row for register and sign in buttons, 2 col-->
+				<div class="box">
+					<button class="register">Register</button>
+				</div>
+				<div class="box">
+					<button class="signIn">Sign In</button>
+				</div>
+			</div>
 		</form>
 	</body>
 </html>

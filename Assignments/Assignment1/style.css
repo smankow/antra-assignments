@@ -1,52 +1,85 @@
+*,
+*::before,
+*::after {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
 body{
-  font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+    font-family:Arial, Helvetica, sans-serif;
+    
 }
-#container{
-  position: absolute; /* Note: Learn about how this works */
-  width: 60%; /* Could be more or less, depending on screen size */
-  /*padding: 5%;*/
-  /*background-color: #fefefe;*/
-  /*border: 1px solid #888;*/
+
+form {
+    height: auto;
+    margin: 0 auto;
+    max-width: 600px;
 }
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin: 2% 0;
+}
+
+.box {
+    width: 100%;
+    height: 50%;
+    
+}
+#agreementBox{
+    width: 50%;
+}
+
+/* Content above this line for adjusting flex box */
+
 h1{
-  text-align: center;
+    text-align: center;
 }
+
 input[type=text], input[type=password], input[type=tel], input[type=email] {
-  padding: 1% 1%; /* Padding is inside the text box, margin is surrounding it */
-  margin: 1% 0;
-  box-sizing: border-box; /* Learn about this */
-  width: 49%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
 }
-input.oneColumn{
-  width:100% !important; /*overrides width of 49%*/
+
+input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=email]:focus{
+    border: 2px solid #8bc0eb;
+    border-radius: 0.25rem;
+    outline: transparent; /*Chrome user agent stylesheet gives a black outline on focus*/
 }
-input.leftColumn{
-  float: left;
-}
-input.rightColumn{
-  float: right;
-}
+
 label{
-  font-weight: bold;
+    font-weight: bold;
 }
-span{
-  float:right;
-  padding-left: 20%;
+
+span, .termsBtn{
+    font-size:60%;
 }
+
 button{
-  border: 1px solid transparent;
-  border-radius: 0.25rem; /*gives buttons rounded edges*/
-  color:#fff;
-  cursor:pointer; /*turns the cursor into a finger on hover*/
+    border: 1px solid transparent;
+    border-radius: 0.25rem; /*gives buttons rounded edges*/
+    color:#fff;
+    cursor:pointer; 
+    padding: 1% 0;
 }
-button:not(.termsBtn){  /*Excludes the button next to terms of service to keep it smaller*/
-  box-sizing: border-box; 
-  width: 49%;
-  padding: 14px 20px;
+
+button:not(.termsBtn){
+    width: 100%;
 }
+
 .register{
-  background-color:#418bca;
+    background-color:#418bca;
 }
+
 .signIn{
-  background-color:#5bb85d;
+    background-color:#5bb85d;
 }
