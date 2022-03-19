@@ -18,6 +18,8 @@ body{
     font-size: 1.6rem;
     box-sizing: border-box;
     font-family: sans-serif;
+    background-image: url(../images/gradient-pink.png);
+    background-size: cover;
 }
 /*label{
     cursor:pointer;
@@ -36,7 +38,7 @@ body{
     left: 0;
     width: 100%;
     height: 10%;
-    background-image: url(images/gradient-teal.png);
+    background-image: url(../images/gradient-teal.png);
     background-size:contain;
     border-bottom: 2px solid var(--color-border);
 }
@@ -65,8 +67,6 @@ body{
     flex-wrap: wrap;
     height: 90%;
     width: 100%;
-    background-image: url(images/gradient-pink.png);
-    background-size: cover;
 }
 .blog__post{
     height:30%;

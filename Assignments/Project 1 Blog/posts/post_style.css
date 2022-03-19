@@ -1,0 +1,99 @@
+:root{
+    --color-whitebg: #fff;
+    --color-border:#464646;
+    --color-categ1: #68abed;
+    --color-categ2: #4ead50;
+}
+*,
+*::before,
+*::after {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.25%;
+}
+body{
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-image: url(../images/gradient-pink.png);
+    background-size: cover;
+}
+.container{
+    position: absolute;
+    height:auto;
+    width:100%;
+}
+/*header*/
+.header{
+    z-index: 1;
+    display:flex;
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background-image: url(../images/gradient-teal.png);
+    background-size:contain;
+    border-bottom: 2px solid var(--color-border);
+}
+.header__center{
+    width:50%;
+    text-decoration: underline;
+    text-align: center;
+    color:var(--color-whitebg);
+    
+    font-size:  4vw;
+}
+.header__side{
+    font-size: 3vh; /* note to self: research vh */
+    width: 25%;
+}
+.header__side > input {
+    height: 50%;
+    width: 100%;
+    background-color: var(--color-whitebg);
+}
+/*blog*/
+.blog{
+    display: grid;
+    grid-template-columns: 3 1fr;
+    grid-auto-rows: minmax(min-content, max-content);
+    gap: 25px;
+    margin: 25px;
+    /*font-size: 2vh;
+    height: 90%;
+    width: 100%;*/
+}
+.blog__post{
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+    line-height: 1.5;
+}
+.blog > :not(.blog__post){
+    grid-column: 3;
+}
+.blog > *{
+    padding: 10px;
+    background-color:var(--color-whitebg);
+    box-shadow: 3px 3px 10px 1px var(--color-border);
+    border: 1px solid black;
+}
+h3{
+    font-style: italic;
+}
+.pokemon{
+    object-fit: cover;
+    width: 15%;
+}
+#avatar{
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    width: 50%;
+}
+.date{
+    color:gray;
+}
