@@ -68,7 +68,7 @@ body{
     height: 90%;
     width: 100%;
 }
-.blog__post{
+.card{
     height:30%;
     width:40%;
     margin: 2% 1%;
@@ -76,15 +76,28 @@ body{
     background-color:var(--color-whitebg);
     box-shadow: 3px 3px 10px 1px var(--color-border);
 }
-.blog__post--world{
+.card__world{
     color:var(--color-categ1);
 }
-.blog__post--design{
+.card__design{
     color:var(--color-categ2);
 }
-.blog__post--date{
+.card__date{
     color:gray;
 }
-.blog__post > div {
+.card > div {
     margin-top:20%;
+}
+.footer{
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(../images/gradient-teal.png);
+    background-size:contain;
+    border-top: 2px solid var(--color-border);
+    padding: 10px 0;
+}
+.footgrid{
+    padding: 10px 0;
+    text-align: center;
 }

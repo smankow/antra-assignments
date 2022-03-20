@@ -84,9 +84,20 @@ body{
 h3{
     font-style: italic;
 }
+.caption{
+    color:gray;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-weight: bold;
+}
 .pokemon{
     object-fit: cover;
     width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 #avatar{
     display: block;
@@ -97,4 +108,26 @@ h3{
 }
 .date{
     color:gray;
+}
+.footer{
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(../images/gradient-teal.png);
+    background-size:contain;
+    border-top: 2px solid var(--color-border);
+    padding: 10px 0;
+}
+.footgrid{
+    padding: 10px 0;
+    text-align: center;
+}
+.btn{
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 10px 16px;
 }
