@@ -6,8 +6,10 @@ const domSeletors = {
 const element = document.querySelector(domSeletors.albumsBody);
 const subheader = document.querySelector(domSeletors.albumsHeader);
 
+let numresults;
 let albums = []
 let inputBox = document.getElementById("searchinput")
+let albumsToHTML =[];
 
 function renderAlbums(albums){
     let searchText=document.getElementById("searchinput").value
@@ -20,11 +22,34 @@ function renderAlbums(albums){
     //document.getElementById("spinner").style.display="none"
     const subelement = document.querySelector(domSeletors.albumsCards)
     
-    let albumsToHTML = [];
+    
     for(let i=0; i<albums.results.length; i++)
     {
         albumsToHTML[i] = generateAlbumItem(albums.results[i])
-        subelement.innerHTML+=albumsToHTML[i]
+        // subelement.innerHTML+=albumsToHTML[i]
+    }
+    print20Results(subelement)
+}
+
+function addMoreResults(){
+    const subelement = document.querySelector(domSeletors.albumsCards)
+    if(albumsToHTML.length===0){
+        alert("End of results")
+    }
+    else if(albumsToHTML.length<20){
+        let temp = albumsToHTML.length
+        for(let i=0; i<temp; i++){
+            subelement.innerHTML+=albumsToHTML.shift()
+        }
+    }
+    else{
+        print20Results(subelement)
+    }
+}
+
+function print20Results(subelement){
+    for(let i=0; i<20; i++){
+        subelement.innerHTML+=albumsToHTML.shift()
     }
 }
 
@@ -48,6 +73,9 @@ inputBox.addEventListener("keydown", function (e) {
         inputReceived(e);
     }
 });
+
+// inputBox.addEventListener("keydown", setTimeout(function() {
+//     inputReceived()},3000))
 
 function inputReceived(){
     let searchText=document.getElementById("searchinput").value
