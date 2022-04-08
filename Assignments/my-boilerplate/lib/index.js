@@ -153,7 +153,7 @@ var HelloMessage = /*#__PURE__*/ (function (_React$Component) {
           /*#__PURE__*/ _react["default"].createElement(
             "div",
             null,
-            "Hello!!!!! ",
+            "Hellooooo!!!!! ",
             this.props.name
           ),
           /*#__PURE__*/ _react["default"].createElement(
