@@ -1,6 +1,6 @@
 import React from 'react';
 import logoSvg from '../assets/images/logo.svg';
-const Header = () => {
+const Navigation = () => {
     return (
         <div className = "navigation">
 			<div className = "container-fluid">
@@ -27,4 +27,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default Navigation;

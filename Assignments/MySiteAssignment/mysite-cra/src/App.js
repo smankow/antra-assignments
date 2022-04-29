@@ -2,7 +2,7 @@
 // import './App.css';
 import './style.css'
 import './boostrap/css/bootstrap.min.css'
-import Header from './components/Header';
+import Navigation from './components/Navigation';
 import Main from './components/Main';
 import About from './components/About'
 import Summary from './components/Summary';
@@ -13,7 +13,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <Header />
+      <Navigation />
       <Main/>
       <About/>
       <Summary/>
