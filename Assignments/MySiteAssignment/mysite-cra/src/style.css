@@ -65,7 +65,7 @@ html {
 .submit-contact .btn-border,
 .projects .btn-border {
   background-color: transparent;
-  width: 100%;
+  width: fit-content;
   margin-top: 40px;
   color: white;
   font-family: "Roboto", Helvetica, serif;
@@ -203,6 +203,9 @@ html {
   font-style: italic;
 }
 /*.luvtalk-project, .personal-website-project, .strike-zone-project, .resume {border: 3px solid white;}*/
+.luvtalk-project, .personal-website-project, .strike-zone-project, .resume {
+  padding: 10px;
+}
 .luvtalk-project {
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url(./assets/images/luvtalklogo.png);
