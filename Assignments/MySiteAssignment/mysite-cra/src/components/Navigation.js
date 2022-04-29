@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import logoSvg from '../assets/images/logo.svg';
 const Navigation = () => {
     return (
@@ -15,9 +16,9 @@ const Navigation = () => {
 					<div className = "col-xs-11 col-sm-11 col-md-11 col-lg-11 text-right">
 						<div className = "primary-nav">
 							<ul>
-								<li><a href = "index.html">Home</a></li>
-								<li><a href = "portfolio.html">Portfolio</a></li>
-								<li><a href = "contact.html">Contact</a></li>
+								<li><NavLink exact to="/">Home</NavLink></li>
+								<li><NavLink to="/portfolio">Portfolio</NavLink></li>
+								<li><NavLink to="/contact">Contact</NavLink></li>
 							</ul>
 						</div>
 					</div>
