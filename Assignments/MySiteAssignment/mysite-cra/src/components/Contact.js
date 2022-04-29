@@ -2,7 +2,7 @@ import React from 'react';
 const Contact = () => {
     return (
         <>
-        <div className = "contact">
+        <div className = "contact" id="contact">
 			<div className = "container-fluid">
 				<div className = "row">
 					<div className = "col-sm-12 col-md-12 text-center">
