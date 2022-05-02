@@ -1,8 +1,8 @@
 import React from 'react';
-import facebookSvg from '../assets/images/facebook.svg';
-import linkedinSvg from '../assets/images/linkedin.svg';
-import pinterestSvg from '../assets/images/pinterest.svg';
-import emailSvg from '../assets/images/email.svg';
+import facebookSvg from '../../assets/images/facebook.svg';
+import linkedinSvg from '../../assets/images/linkedin.svg';
+import pinterestSvg from '../../assets/images/pinterest.svg';
+import emailSvg from '../../assets/images/email.svg';
 
 const Footer = () => {
     return (

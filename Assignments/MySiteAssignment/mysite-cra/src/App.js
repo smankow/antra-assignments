@@ -4,13 +4,13 @@ import './style.css'
 import './boostrap/css/bootstrap.min.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Navigation from './components/Navigation';
-import Main from './components/Main';
-import About from './components/About'
-import Summary from './components/Summary';
-import Projects from './components/Projects';
-import Contact from './components/Contact'
-import Footer from './components/Footer';
+import Navigation from './components/Navigation/Navigation';
+import Main from './components/Main/Main';
+import About from './components/About/About'
+import Summary from './components/Summary/Summary';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact'
+import Footer from './components/Footer/Footer';
 // import MainPage from './layouts/MainPage';
 
 function App() {

@@ -1,8 +1,8 @@
 import React from 'react';
-import devDesignSvg from '../assets/images/developerdesign.svg';
-import respDesignSvg from '../assets/images/responsivedesign.svg';
-import innovativeSolutionsSvg from '../assets/images/innovativesolutions.svg';
-import passionSvg from '../assets/images/passion.svg';
+import devDesignSvg from '../../assets/images/developerdesign.svg';
+import respDesignSvg from '../../assets/images/responsivedesign.svg';
+import innovativeSolutionsSvg from '../../assets/images/innovativesolutions.svg';
+import passionSvg from '../../assets/images/passion.svg';
 
 const Summary = () => {
     return (
