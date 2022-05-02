@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { HashLink as Link } from 'react-router-hash-link';
 const About = () => {
     return (
         <div className = "about" id="about">
@@ -50,7 +50,7 @@ const About = () => {
 				<div className = "row">
 					<div className = "about-option-buttons">
 						<div className = "col-sm-2 col-md-2">
-							<a href = "#contact" className = "btn btn-default btn-black-border">Contact</a>
+							<Link to = "#contact" className = "btn btn-default btn-black-border">Contact</Link>
 						</div>
 					</div>
 				</div>

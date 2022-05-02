@@ -1,4 +1,5 @@
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 const Main = () => {
     return (
         <div className = "main">
@@ -14,11 +15,11 @@ const Main = () => {
 				<div className = "row text-center">
 					<div className = "banner-buttons">
 						<div className = "col-sm-1 col-md-1 col-sm-offset-5 col-md-offset-5">
-							<a className = "btn btn-default btn-border" href = "#about">Info</a>
+							<Link className = "btn btn-default btn-border" to = "#about">Info</Link>
 						</div>
 
 						<div className = "col-sm-1 col-md-1">
-							<a className = "btn btn-default btn-border" href = "#projects">Portfolio</a>
+							<Link className = "btn btn-default btn-border" to = "#projects">Portfolio</Link>
 						</div>
 					</div>
 				</div>

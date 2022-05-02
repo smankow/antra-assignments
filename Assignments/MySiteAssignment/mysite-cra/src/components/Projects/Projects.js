@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { HashLink as Link } from 'react-router-hash-link';
 const Projects = () => {
     return (
         <div className = "projects" id="projects">
@@ -28,7 +28,7 @@ const Projects = () => {
 							<div className = "row">
 								<div className = "col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4">
 									<div className = "project-more-info">
-										<a className = "btn btn-default btn-border" href = "#">More</a>
+										<Link className = "btn btn-default btn-border" to = "#">More</Link>
 									</div>
 								</div>
 							</div>
@@ -42,7 +42,7 @@ const Projects = () => {
 							<div className = "row">
 								<div className = "col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4">
 									<div className = "project-more-info">
-										<a className = "btn btn-default btn-border" href = "#">More</a>
+										<Link className = "btn btn-default btn-border" to = "#">More</Link>
 									</div>
 								</div>
 							</div>
@@ -56,7 +56,7 @@ const Projects = () => {
 							<div className = "row">
 								<div className = "col-sm-4 col-md-4 col-sm-offset-4 col-md-offset-4">
 									<div className = "project-more-info">
-										<a className = "btn btn-default btn-border" href = "#">More</a>
+										<Link className = "btn btn-default btn-border" to = "#">More</Link>
 									</div>
 								</div>
 							</div>
@@ -67,7 +67,7 @@ const Projects = () => {
 				<div className = "row">
 					<div className = "col-sm-2 col-md-2 col-sm-offset-5 col-md-offset-5">
 						<div className = "see-more-button">
-							<a className = "btn btn-default btn-border" href = "#">More Projects</a>
+							<Link className = "btn btn-default btn-border" to = "#">More Projects</Link>
 						</div>
 					</div>
 				</div>
